@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Amor em Pixels</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <section class="inicio">
+            <h1>Oi, Amor! 💖</h1>
+            <p>Esse site é só pra te lembrar o quanto você é especial 💘</p>
+            <img src="hello-kitty-gamer.png" alt="Hello Kitty Gamer">
+            <button onclick="scrollToNext()">Clique para continuar</button>
+        </section>
+
+        <section class="historia">
+            <h2>Como nos conhecemos 🎮</h2>
+            <p>Tudo começou com um <strong>match no Valorant</strong>... mas quem diria que o verdadeiro headshot seria no meu coração 💘🔫</p>
+        </section>
+
+        <section class="momentos">
+            <h2>3 Meses de Amor 💑</h2>
+            <ul>
+                <li>🕹️ Primeira vez que te carreguei na partida e na vida 🎒❤️</li>
+                <li>💬 Primeiro 'te amo' digitado no chat (e no meu coração)</li>
+                <li>🎉 3 meses de namoro, 99 partidas juntos, 1 amor só nosso</li>
+            </ul>
+        </section>
+
+        <section class="cartinha">
+            <h2>Cartinha do Coração 💌</h2>
+            <p>
+                Amor,<br><br>
+                Em 3 meses, você virou meu duo favorito dentro e fora do jogo.<br>
+                Eu poderia escrever linhas e linhas, mas nenhuma palavra vence o combo:<br>
+                Hello Kitty + Valorant + Você.<br><br>
+                Te amo demais, minha jogadora favorita.<br>
+                — Seu duo da vida ❤️
+            </p>
+        </section>
+
+        <section class="final">
+            <h2>Quer um beijinho? 😚</h2>
+            <button onclick="showSurpresa()">Me dá um beijo</button>
+            <div id="surpresa" style="display:none;">
+                <img src="hello-kitty-kiss.png" alt="Hello Kitty beijinho">
+                <p>Te amo! 💕</p>
+            </div>
+        </section>
+    </div>
+
+    <audio id="musica" autoplay loop>
+        <source src="musiquinha.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+    </audio>
+
+    <script>
+        function scrollToNext() {
+            document.querySelector('.historia').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function showSurpresa() {
+            document.getElementById('surpresa').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
