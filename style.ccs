@@ -1,3 +1,4 @@
+<style>
 body {
     background: linear-gradient(#ffe0f0, #ffc0cb);
     font-family: 'Pacifico', cursive;
@@ -45,3 +46,4 @@ ul {
     list-style-type: none;
     padding: 0;
 }
+<style>
